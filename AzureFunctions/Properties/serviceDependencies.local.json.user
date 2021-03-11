@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "storage1": {
+      "restored": true,
+      "restoreTime": "2021-02-25T09:51:24.7188443Z"
+    },
+    "appInsights1": {
+      "restored": true,
+      "restoreTime": "2021-02-25T09:51:24.1768841Z"
+    }
+  },
+  "parameters": {
+    "storage1.resourceGroupName": {
+      "Name": "storage1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "IOT20"
+    },
+    "storage1.subscriptionId": {
+      "Name": "storage1.subscriptionId",
+      "Type": "subscription",
+      "Value": "a994b64b-6d0f-4f8a-b383-4ed1e94575d5"
+    }
+  }
+}

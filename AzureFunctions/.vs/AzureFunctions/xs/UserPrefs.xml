@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{A3C4B962-EFC1-48DC-A7F2-8D47B0B63CC1}|Default">
+  <MonoDevelop.Ide.ItemProperties.AzureFunctions PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="local.settings.json">
+    <Files>
+      <File FileName="SaveToCosmosDb.cs" Line="32" Column="2" />
+      <File FileName="getAllFromCosmos.cs" Line="32" Column="1" />
+      <File FileName="local.settings.json" Line="6" Column="18" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AzureFunctions" expanded="True">
+            <Node name="AzureFunctions" expanded="True">
+              <Node name="local.settings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
