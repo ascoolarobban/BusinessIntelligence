@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{D149EB41-35EE-412D-A838-A695A980F2C7}|Default">
+  <MonoDevelop.Ide.ItemProperties.SaveTotableStorage PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SaveTotableStorage/GhostMessages.cs">
+    <Files>
+      <File FileName="SaveTotableStorage/SaveDynamicDataToTableStorage.cs" Line="22" Column="2" />
+      <File FileName="SaveTotableStorage/SaveToTableStorage.cs" />
+      <File FileName="SaveTotableStorage/local.settings.json" Line="10" Column="122" />
+      <File FileName="SaveTotableStorage/GhostMessages.cs" Line="19" Column="28" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SaveTotableStorage" expanded="True">
+            <Node name="SaveTotableStorage" expanded="True">
+              <Node name="GhostMessages.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
