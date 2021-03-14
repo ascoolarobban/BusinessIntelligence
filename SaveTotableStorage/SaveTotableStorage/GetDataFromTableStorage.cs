@@ -1,34 +1,51 @@
 using System;
-using System.IO;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.Cosmos.Table;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
-using Microsoft.Azure.Cosmos.Table;
-using System.Collections.Generic;
-using System.Collections;
-using System.Linq;
+namespace SaveTotableStorage
 
-namespace SaveTotableStorage.Models
-
-{
-    public static class GetDataFromTableStorage
     {
-        [FunctionName("GetDataFromTableStorage")]
-        public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
-            [Table("Messages")] CloudTable cloudTable,
-            ILogger log)
+        public class GhostMessages : TableEntity
         {
+            public string deviceId { get; set; }
+            public Boolean Activity { get; set; }
+            public string GhostSensor { get; set; }
+            public Int64 TimeStamp { get; set; }
+        }
+        public static class GetDataFromTableStorage
+        {
+            
+            [FunctionName("GetDataFromTableStorage")]
+            public static async Task<IActionResult> Run(
+                [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
+                [Table("Messages")] CloudTable cloudTable,
+                ILogger log)
+            {
 
-            IEnumerable<GhostMessages> results = await cloudTable.ExecuteQuerySegmentedAsync(new TableQuery<GhostMessages>(), null);
-            results = results.OrderBy(ts => ts.Timestamp);
+                IEnumerable<GhostMessages> results = await cloudTable.ExecuteQuerySegmentedAsync(new TableQuery<GhostMessages>(), null);
+                if(orderby == "desc")
+                {
+                    results = results.OrderByDescending<GhostMessages>(TimeStamp => ts.TimeStamp);
+                }
+           
+                if(limit != null)
+                {
+                    results = results.Take(Int32.Parse(limit));
+                }
+
+                return results != null
+                    ? (ActionResult) new OkObjectResult(results)
+                    : new BadRequestObjectResult("[]") ;
+                
 
 
-            return new OkObjectResult(results);
+                return new OkObjectResult(results);
+            }
         }
     }
-}

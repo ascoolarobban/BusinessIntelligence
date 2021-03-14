@@ -1,15 +1,13 @@
-using IoTHubTrigger = Microsoft.Azure.WebJobs.EventHubTriggerAttribute;
-
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
-using Microsoft.Azure.EventHubs;
-using System.Text;
+using System;
 using System.Net.Http;
+using System.Text;
+using Microsoft.Azure.EventHubs;
+using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using System;
+using IoTHubTrigger = Microsoft.Azure.WebJobs.EventHubTriggerAttribute;
 
-namespace SaveTotableStorage.Models
+namespace SaveTotableStorage
 {
     public static class SaveToTableStorage
     {
@@ -17,7 +15,7 @@ namespace SaveTotableStorage.Models
 
         [FunctionName("SaveToTableStorage")]
         [return: Table("Messages")]
-        public static GhostMessages Run([IoTHubTrigger("messages/events", Connection = "IotHubConnection")] EventData message, ILogger log)
+        public static GhostMessages Run([IoTHubTrigger("messages/events", Connection = "IotHubConnection", ConsumerGroup = "SendToTable")] EventData message, ILogger log)
         {
             try
             {

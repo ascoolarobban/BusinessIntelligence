@@ -9175,7 +9175,7 @@
       "outputPath": "/Users/robin/Documents/DEV/BusinessIntelligence/BusinessIntelligence/SaveTotableStorage/SaveTotableStorage/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/robin/.config/NuGet/NuGet.Config"
+        "/Users/robin/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
