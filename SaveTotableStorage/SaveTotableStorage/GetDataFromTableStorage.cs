@@ -48,5 +48,5 @@ namespace SaveTotableStorage
 
                 return new OkObjectResult(results);
             }
-        }
+    }
     }

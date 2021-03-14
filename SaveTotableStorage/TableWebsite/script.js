@@ -12,9 +12,7 @@ fetch("https://robinstorage.azurewebsites.net/api/GetDataFromTableStorage?code=k
         <td>${row.deviceId}</td>
         <td>${row.activity}</td>
         <td>${row.timestamp}</td>
-        
-        
-        
+ 
         `
         }
 
