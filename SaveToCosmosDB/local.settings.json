@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=ghostbusterstorage;AccountKey=P5f3kehYHziGawlVo7vgTqZHMXmhHE15wSCa7EfT3NyPse8ZtGO91rXWQ9aYgu8udCeqrVfbP2YXK6bdNr9JwA==;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "IotHubConnection": "Endpoint=sb://ihsuprodamres095dednamespace.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=7giKC5U+Qpb2Q6JjWSX4M5M4i8fLs2T2I6Vi9OXshSM=;EntityPath=iothub-ehub-iot-robban-7947812-7564cb1cfc",
+    "ComosDbConnection": "AccountEndpoint=https://iotrobin-cosmos.documents.azure.com:443/;AccountKey=Q9ZGgd72DiKS1ZIl6ihHcsRcdrdA5IKfZ0iRfinamr4azx1wx2uxUy6B7dcz6bVUVMyf4I8L4Ho08ghFR8nQXA==;"
+  }
+}

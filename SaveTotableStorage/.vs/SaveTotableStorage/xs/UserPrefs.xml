@@ -1,21 +1,15 @@
 ﻿<Properties StartupConfiguration="{D149EB41-35EE-412D-A838-A695A980F2C7}|Default">
   <MonoDevelop.Ide.ItemProperties.SaveTotableStorage PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="SaveTotableStorage/local.settings.json">
     <Files>
-      <File FileName="SaveTotableStorage/SaveDynamicDataToTableStorage.cs" Line="22" Column="2" />
-      <File FileName="SaveTotableStorage/SaveToTableStorage.cs" />
-      <File FileName="SaveTotableStorage/local.settings.json" Line="1" Column="1" />
-      <File FileName="SaveTotableStorage/GhostMessages.cs" />
-      <File FileName="SaveTotableStorage/GetDataFromTableStorage.cs" Line="51" Column="6" />
-      <File FileName="SaveTotableStorage/host.json" />
+      <File FileName="SaveTotableStorage/GetDataFromTableStorage.cs" Line="22" Column="10" />
+      <File FileName="SaveTotableStorage/local.settings.json" Line="10" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SaveTotableStorage" expanded="True">
-            <Node name="SaveTotableStorage" expanded="True">
-              <Node name="ConnectedServicesFolder" selected="True" />
-            </Node>
+            <Node name="SaveTotableStorage" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
