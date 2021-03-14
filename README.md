@@ -1,4 +1,4 @@
-# BI DHT11 to CosmosDb - Power BI
+# BI DHT11 to CosmosDb. GhostSensor to TableStorage. - Power BI
 
 Using Esp32, DHT11 and Independent resistor module (Lightsensor).
 
