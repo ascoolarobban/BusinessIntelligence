@@ -27,11 +27,12 @@ namespace SaveTotableStorage
                 [Table("Messages")] CloudTable cloudTable,
                 ILogger log)
             {
-
+                string limit = req.Query["limit"];
+                string orderby = req.Query["orderby"];
                 IEnumerable<GhostMessages> results = await cloudTable.ExecuteQuerySegmentedAsync(new TableQuery<GhostMessages>(), null);
                 if(orderby == "desc")
                 {
-                    results = results.OrderByDescending<GhostMessages>(TimeStamp => ts.TimeStamp);
+                    results = results.OrderByDescending(ts=>ts.TimeStamp);
                 }
            
                 if(limit != null)
